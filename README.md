@@ -1,19 +1,24 @@
-#Menuridae
-##Unofficial lyrebird.ai API
+# Menuridae
+## Unofficial lyrebird.ai API
 
-This is not affiliated with lyrebird.ai, may break without warning, and may violate their terms of service to use. 
+This is not affiliated with [lyrebird.ai](lyrebird.ai), may break without warning, and may violate their terms of service to use. 
 
-To start, you must sign up with lyrebird.ai and train your voice model there.
+The `generate()` method allows you to send a text string and returns a promise that resolves to the URL (on S3) of the generated TTS audio (in MP3 format).
 
-##Example
+To start, you must sign up with [lyrebird.ai](lyrebird.ai) and train your voice model there.
+
+Install this package with `npm install menuridae`
+
+## Example
 
 Assuming you have a .env file in the format:
+  
 
     EMAIL=blah@blah.com
     PASSWORD=blah
 
-You can run this like:
-
+You can run it this like:
+  
 
     const request = require('request');
     const dotenv = require('dotenv');
